@@ -11,13 +11,13 @@ Don't worry if you get any low score like 30% or 40% or 50% even though you comp
 I did complete the course and then took each practice test atleast 2 times until unless I got 80% plus.
 
 - Follow Stephane Maarek **Ultimate AWS Certified Solutions Architect Associate SAA-C03** link below:
-  https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/
+  <https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/>
 
 - Follow Stephane Maarek **Practice Exams | AWS Certified Solutions Architect Associate** link below:
-  https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/
+  <https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/>
 
 - Follow Neal Davis **AWS Certified Solutions Architect Associate Practice Exams** link below:
-  https://www.udemy.com/course/aws-certified-solutions-architect-associate-practice-tests-k/
+  <https://www.udemy.com/course/aws-certified-solutions-architect-associate-practice-tests-k/>
 
 ## AWS vs Azure vs GCP?
 
