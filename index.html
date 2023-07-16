@@ -1,0 +1,1556 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
+    
+    
+      
+        <title>Abhishek's Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="AWS Solution Architect Associate Material" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="./assets/images/social/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="None" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="AWS Solution Architect Associate Material" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="./assets/images/social/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aws-solution-architect-associate-material" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Abhishek&#39;s Notes" class="md-header__button md-logo" aria-label="Abhishek's Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Abhishek's Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AWS Solution Architect Associate Material
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="." class="md-tabs__link md-tabs__link--active">
+      AWS Solution Architect Associate Material
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Abhishek&#39;s Notes" class="md-nav__button md-logo" aria-label="Abhishek's Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Abhishek's Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          AWS Solution Architect Associate Material
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        AWS Solution Architect Associate Material
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#courses-to-follow-for-aws-saa-c03-certificate" class="md-nav__link">
+    Courses to follow for AWS SAA-C03 Certificate:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aws-vs-azure-vs-gcp" class="md-nav__link">
+    AWS vs Azure vs GCP?
+  </a>
+  
+    <nav class="md-nav" aria-label="AWS vs Azure vs GCP?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compute-wise" class="md-nav__link">
+    Compute Wise
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-wise" class="md-nav__link">
+    Database Wise
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-wise" class="md-nav__link">
+    Storage Wise
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networking-wise" class="md-nav__link">
+    Networking Wise
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-differences" class="md-nav__link">
+    Important Differences
+  </a>
+  
+    <nav class="md-nav" aria-label="Important Differences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interface-endpoint-vs-gateway-endpoint" class="md-nav__link">
+    Interface Endpoint vs Gateway Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudfront-vs-global-accelerator" class="md-nav__link">
+    CloudFront vs Global Accelerator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-ip-vs-elastic-ip" class="md-nav__link">
+    Public IP vs Elastic IP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dedicated-host-vs-dedicated-instance" class="md-nav__link">
+    Dedicated Host vs Dedicated Instance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nat-gateway-vs-nat-instance" class="md-nav__link">
+    NAT Gateway vs NAT Instance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cognito-user-pool-vs-cognito-identity-pool" class="md-nav__link">
+    Cognito User Pool vs Cognito Identity Pool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-s3-vs-amazon-ebs-vs-amazon-efs" class="md-nav__link">
+    AWS S3 vs Amazon EBS vs Amazon EFS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudwatch-vs-cloudtrail" class="md-nav__link">
+    Cloudwatch vs CloudTrail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-group-vs-network-access-control-lists-nacls" class="md-nav__link">
+    Security Group vs Network Access Control Lists (NACLs)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-parameter-store-vs-aws-secrets-manager" class="md-nav__link">
+    System Parameter Store vs AWS Secrets Manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alb-vs-nlb-vs-glb" class="md-nav__link">
+    ALB vs NLB vs GLB
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exam-questions" class="md-nav__link">
+    Exam Questions
+  </a>
+  
+    <nav class="md-nav" aria-label="Exam Questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#question-1" class="md-nav__link">
+    Question 1
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-2" class="md-nav__link">
+    Question 2
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_1" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-3" class="md-nav__link">
+    Question 3
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_2" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-4" class="md-nav__link">
+    Question 4
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_3" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-5" class="md-nav__link">
+    Question 5
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_4" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-6" class="md-nav__link">
+    Question 6
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_5" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-7" class="md-nav__link">
+    Question 7
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_6" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-8" class="md-nav__link">
+    Question 8
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 8">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_7" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-9" class="md-nav__link">
+    Question 9
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 9">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_8" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-10" class="md-nav__link">
+    Question 10
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 10">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_9" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-11" class="md-nav__link">
+    Question 11
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 11">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_10" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-12" class="md-nav__link">
+    Question 12
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_11" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-13" class="md-nav__link">
+    Question 13
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 13">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_12" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-14" class="md-nav__link">
+    Question 14
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 14">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_13" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-15" class="md-nav__link">
+    Question 15
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 15">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_14" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-16" class="md-nav__link">
+    Question 16
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 16">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_15" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-17" class="md-nav__link">
+    Question 17
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_16" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-18" class="md-nav__link">
+    Question 18
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 18">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_17" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-19" class="md-nav__link">
+    Question 19
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_18" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-20" class="md-nav__link">
+    Question 20
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_19" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-21" class="md-nav__link">
+    Question 21
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 21">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_20" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-22" class="md-nav__link">
+    Question 22
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 22">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_21" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-23" class="md-nav__link">
+    Question 23
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 23">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_22" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-24" class="md-nav__link">
+    Question 24
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_23" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-25" class="md-nav__link">
+    Question 25
+  </a>
+  
+    <nav class="md-nav" aria-label="Question 25">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#answer_24" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hope-you-liked-it-please-subscribe-to-my-youtube-channel" class="md-nav__link">
+    Hope you liked it. Please Subscribe to my Youtube Channel.
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="aws-solution-architect-associate-material">AWS Solution Architect Associate Material</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally. Millions of customers—including the fastest-growing startups, largest enterprises, and leading government agencies—are using AWS to lower costs, become more agile, and innovate faster.</p>
+<h2 id="courses-to-follow-for-aws-saa-c03-certificate">Courses to follow for AWS SAA-C03 Certificate:</h2>
+<p>To PASS AWS Solution Architect Associate certification, you just need to follow below course by Stephane Maarek and then, start giving practice tests.
+Don't worry if you get any low score like 30% or 40% or 50% even though you complete the course two times. Attempt them until you start getting 80% plus. <strong>Thats the key to PASS certification.</strong>
+I did complete the course and then took each practice test atleast 2 times until unless I got 80% plus.</p>
+<ul>
+<li>
+<p>Follow Stephane Maarek <strong>Ultimate AWS Certified Solutions Architect Associate SAA-C03</strong> link below:
+  <a href="https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/">https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/</a></p>
+</li>
+<li>
+<p>Follow Stephane Maarek <strong>Practice Exams | AWS Certified Solutions Architect Associate</strong> link below:
+  <a href="https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/">https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/</a></p>
+</li>
+<li>
+<p>Follow Neal Davis <strong>AWS Certified Solutions Architect Associate Practice Exams</strong> link below:
+  <a href="https://www.udemy.com/course/aws-certified-solutions-architect-associate-practice-tests-k/">https://www.udemy.com/course/aws-certified-solutions-architect-associate-practice-tests-k/</a></p>
+</li>
+</ul>
+<h2 id="aws-vs-azure-vs-gcp">AWS vs Azure vs GCP?</h2>
+<p>AWS provides over 200 services, whilst Azure provides up to 100 services. Google Cloud, on the other hand, is catching up to Azure and AWS in terms of service offerings, offering roughly 60+ services.</p>
+<h3 id="compute-wise">Compute Wise</h3>
+<p><img alt="alt text" src="path/compute_difference.jpg" /></p>
+<h3 id="database-wise">Database Wise</h3>
+<p><img alt="alt text" src="path/database_difference.jpg" /></p>
+<h3 id="storage-wise">Storage Wise</h3>
+<p><img alt="alt text" src="path/storage_difference.jpg" /></p>
+<h3 id="networking-wise">Networking Wise</h3>
+<p><img alt="alt text" src="path/network_difference.jpg" /></p>
+<h2 id="important-differences">Important Differences</h2>
+<h3 id="interface-endpoint-vs-gateway-endpoint">Interface Endpoint vs Gateway Endpoint</h3>
+<p><img alt="Alt text" src="image.png" /></p>
+<h3 id="cloudfront-vs-global-accelerator">CloudFront vs Global Accelerator</h3>
+<p><img alt="Alt text" src="image-1.png" /></p>
+<h3 id="public-ip-vs-elastic-ip">Public IP vs Elastic IP</h3>
+<p><img alt="Alt text" src="image-2.png" /></p>
+<h3 id="dedicated-host-vs-dedicated-instance">Dedicated Host vs Dedicated Instance</h3>
+<p><img alt="Alt text" src="image-3.png" /></p>
+<h3 id="nat-gateway-vs-nat-instance">NAT Gateway vs NAT Instance</h3>
+<p><img alt="Alt text" src="image-4.png" /></p>
+<h3 id="cognito-user-pool-vs-cognito-identity-pool">Cognito User Pool vs Cognito Identity Pool</h3>
+<p><img alt="Alt text" src="image-5.png" /></p>
+<h3 id="aws-s3-vs-amazon-ebs-vs-amazon-efs">AWS S3 vs Amazon EBS vs Amazon EFS</h3>
+<p><img alt="Alt text" src="image-6.png" /></p>
+<h3 id="cloudwatch-vs-cloudtrail">Cloudwatch vs CloudTrail</h3>
+<p><img alt="Alt text" src="image-7.png" /></p>
+<h3 id="security-group-vs-network-access-control-lists-nacls">Security Group vs Network Access Control Lists (NACLs)</h3>
+<p><img alt="Alt text" src="image-8.png" /></p>
+<h3 id="system-parameter-store-vs-aws-secrets-manager">System Parameter Store vs AWS Secrets Manager</h3>
+<p><img alt="Alt text" src="image-9.png" /></p>
+<h3 id="alb-vs-nlb-vs-glb">ALB vs NLB vs GLB</h3>
+<p><img alt="Alt text" src="image-10.png" /></p>
+<h2 id="exam-questions"><strong>Exam Questions</strong></h2>
+<h3 id="question-1"><strong>Question 1</strong></h3>
+<p><strong>An application runs on port 80 on Amazon EC2 instances behind an Application Load Balancer (ALB).
+According to best practice, inbound traffic to the EC2 instances should be limited to receiving
+traffic from the ALB. How should the EC2 instance security group be configured?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Allow</span> <span class="n">inbound</span> <span class="n">traffic</span> <span class="n">to</span> <span class="n">port</span> <span class="mi">80</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">ALB</span> <span class="n">nodes</span><span class="err">’</span> <span class="n">public</span> <span class="n">IPs</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Allow</span> <span class="n">inbound</span> <span class="n">traffic</span> <span class="n">to</span> <span class="n">port</span> <span class="mi">80</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">VPC</span> <span class="n">CIDR</span> <span class="n">Block</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Allow</span> <span class="n">inbound</span> <span class="n">traffic</span> <span class="n">to</span> <span class="n">port</span> <span class="mi">80</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">NACL</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Allow</span> <span class="n">inbound</span> <span class="n">traffic</span> <span class="n">to</span> <span class="n">port</span> <span class="mi">80</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">ALB</span> <span class="n">Security</span> <span class="n">Group</span>
+</code></pre></div>
+<h4 id="answer">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>D) Allow inbound traffic to port 80 from the ALB Security Group</mark></p>
+<p><mark>Answer explanation:</mark> The best practice for security group configuration is to allow inbound traffic on the relevant port from the ALB Security Group. This will only allow connections on port 80 that originate from the ALB.</p>
+<h3 id="question-2">Question 2</h3>
+<p><strong>A solutions architect is designing an application that requires a storage solution for session state data. The solution must be highly scalable and perform well with thousands of simultaneous users. Which service is MOST performant?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">RDS</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">EFS</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">S3</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">ElastiCache</span>
+</code></pre></div>
+<h4 id="answer_1">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>D) Amazon ElastiCache</mark></p>
+<p><mark>Answer explanation:</mark> Amazon ElastiCache is a scalable, in-memory database that supports key-value data. It is suitable for storing session state data.</p>
+<h3 id="question-3">Question 3</h3>
+<p><strong>A company runs a reporting application at the same time at the end of each week. The application gathers and collates information from many sources and causes a huge spike in CPU usage. The application runs on Amazon EC2 instances in an Auto Scaling group. When the report starts to run, users notice a drop in performance lasting several minutes. How can a solutions architect ensure the application does not slow down each week?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Configure</span> <span class="n">an</span> <span class="n">EC2</span> <span class="n">Auto</span> <span class="n">Scaling</span> <span class="n">scheduled</span> <span class="n">scaling</span> <span class="n">policy</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">monthly</span> <span class="n">schedule</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Configure</span> <span class="n">an</span> <span class="n">EC2</span> <span class="n">Auto</span> <span class="n">Scaling</span> <span class="n">simple</span> <span class="n">scaling</span> <span class="n">policy</span> <span class="n">based</span> <span class="n">on</span> <span class="n">CPU</span> <span class="n">Utilization</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Configure</span> <span class="n">Amazon</span> <span class="n">ElastiCache</span> <span class="n">to</span> <span class="n">remove</span> <span class="n">some</span> <span class="n">of</span> <span class="n">the</span> <span class="n">workload</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">EC2</span> <span class="n">instances</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Configure</span> <span class="n">an</span> <span class="n">Amazon</span> <span class="n">CloudFront</span> <span class="n">distribution</span> <span class="ow">in</span> <span class="n">front</span> <span class="n">of</span> <span class="n">an</span> <span class="n">ALB</span>
+</code></pre></div>
+<h4 id="answer_2">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>A) Configure an EC2 Auto Scaling scheduled scaling policy based on the monthly schedule</mark></p>
+<p><mark>Answer explanation:</mark> Scheduled scaling allows you to set your own scaling schedule. In this case, the scaling action can be scheduled to occur just prior to the time that the reports will be run each month. Scaling actions are performed automatically as a function of time and date. This will ensure that there are enough EC2 instances to serve the demand and prevent the application from slowing down</p>
+<h3 id="question-4">Question 4</h3>
+<p><strong>Some video files have been shared from Amazon S3 and Amazon CloudFront with a select group of customers using signed URLs. To further improve security, a solutions architect must ensure that it is not possible to directly access the objects in Amazon S3. What is the EASIEST way to achieve this requirement?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Create</span> <span class="n">an</span> <span class="n">origin</span> <span class="n">access</span> <span class="n">identity</span> <span class="p">(</span><span class="n">OAI</span><span class="p">)</span> <span class="ow">and</span> <span class="n">instruct</span> <span class="n">users</span> <span class="n">to</span> <span class="n">login</span> <span class="k">with</span> <span class="n">the</span> <span class="n">OAI</span> <span class="ow">and</span> <span class="n">access</span> <span class="n">the</span> <span class="n">files</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">Security</span> <span class="n">group</span><span class="p">,</span> <span class="n">restrict</span> <span class="nb">all</span> <span class="n">inbound</span> <span class="n">access</span><span class="p">,</span> <span class="n">then</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">lower</span><span class="o">-</span><span class="n">numbered</span> <span class="n">rule</span> <span class="n">allowing</span> <span class="n">CloudFront</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Create</span> <span class="n">an</span> <span class="n">origin</span> <span class="n">access</span> <span class="n">identity</span> <span class="p">(</span><span class="n">OAI</span><span class="p">)</span> <span class="ow">and</span> <span class="n">restrict</span> <span class="n">access</span> <span class="n">to</span> <span class="n">the</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">Amazon</span> <span class="n">S3</span> <span class="n">bucket</span> <span class="n">to</span> <span class="n">the</span> <span class="n">OAI</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">bucket</span> <span class="n">policy</span> <span class="n">that</span> <span class="n">restricts</span> <span class="n">access</span> <span class="n">to</span> <span class="n">the</span> <span class="n">bucket</span> <span class="ow">and</span> <span class="n">only</span> <span class="n">allows</span> <span class="n">the</span> <span class="n">CloudFront</span> <span class="n">IP</span> <span class="n">addresses</span>
+</code></pre></div>
+<h4 id="answer_3">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>C) Create an origin access identity (OAI) and restrict access to the files in the Amazon S3 bucket to the OAI</mark></p>
+<p><mark>Answer explanation:</mark> The solutions architect should create a special CloudFront user called an origin access identity (OAI) and associate it with the distribution. Then, modify S3 bucket permissions so that CloudFront can use the OAI to access the files in your bucket and serve them to users. The permissions should also ensure that users can’t use a direct URL to the S3 bucket to access a file there.</p>
+<h3 id="question-5">Question 5</h3>
+<p><strong>An application running on Microsoft servers in an on-premises data center is attached to an SMB file share. The servers will be migrated to AWS and run across multiple Availability Zones. Which storage solution will be the most resilient replacement to the SMB share?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">An</span> <span class="n">Amazon</span> <span class="n">FSx</span> <span class="k">for</span> <span class="n">Windows</span> <span class="n">File</span> <span class="n">Server</span> <span class="n">filesystem</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">An</span> <span class="n">Amazon</span> <span class="n">EFS</span> <span class="n">filesystem</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">An</span> <span class="n">AWS</span> <span class="n">DataSync</span> <span class="n">datastore</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">An</span> <span class="n">Amazon</span> <span class="n">EBS</span> <span class="n">volume</span>
+</code></pre></div>
+<h4 id="answer_4">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>A) An Amazon FSx for Windows File Server filesystem</mark></p>
+<p>Answer explanation: Amazon FSx for Windows File Server provides fully managed, highly reliable file storage that is accessible over the industry-standard Server Message Block (SMB) protocol. It offers single-AZ and multi-AZ deployment options, fully managed backups, and encryption of data at rest and in transit.</p>
+<h3 id="question-6">Question 6</h3>
+<p><strong>An on-premises web application is being refactored on AWS. The database layer currently uses an in-memory cache. The AWS solution should be highly available and support data replicas. Which service should be used for the database cache?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">AWS</span> <span class="n">CloudTrail</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">CloudFront</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">ElastiCache</span> <span class="n">Redis</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">ElastiCache</span> <span class="n">MemCached</span>
+</code></pre></div>
+<h4 id="answer_5">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>C) Amazon ElastiCache Redis</mark></p>
+<p>Answer explanation: Amazon ElastiCache Redis is an in-memory database cache and supports high availability through replicas and multi-AZ.</p>
+<h3 id="question-7">Question 7</h3>
+<p><strong>A MongoDB database is being deployed on an Amazon EC2 instance and requires sustained disk performance of over 16,000 IOPS. The database is expected to grow up to 1TB in size. Which Elastic Block Store (EBS) volume type is BEST suited to these requirements?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Cold</span> <span class="n">HDD</span> <span class="p">(</span><span class="n">sc1</span><span class="p">)</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">General</span> <span class="n">Purpose</span> <span class="n">SSD</span> <span class="p">(</span><span class="n">gp2</span><span class="p">)</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Throughput</span> <span class="n">Optimized</span> <span class="n">HDD</span> <span class="p">(</span><span class="n">st1</span><span class="p">)</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Provisioned</span> <span class="n">IOPS</span> <span class="n">SSD</span> <span class="p">(</span><span class="n">io1</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="answer_6">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>D) Provisioned IOPS SSD (io1)</mark></p>
+<p>Answer explanation: The io1 volume type is suitable for critical business applications that require sustained IOPS performance, or more than 16,000 IOPS or 250 MB/s of throughput per volume. Volume sizes can be up to 16 TB (this maximum applies to all EBS volume types).</p>
+<h3 id="question-8">Question 8</h3>
+<p><strong>An application is delivered over Layer 7 to internet-based users. The application runs on Amazon EC2 instances in a single Availability Zone. How can a Solutions Architect make the architecture highly available and cost-effective?
+Select all that apply:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Configure</span> <span class="n">an</span> <span class="n">Auto</span> <span class="n">Scaling</span> <span class="n">group</span> <span class="n">to</span> <span class="n">add</span> <span class="ow">or</span> <span class="n">remove</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">Availability</span> <span class="n">Zone</span> <span class="n">automatically</span><span class="o">.</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Configure</span> <span class="n">an</span> <span class="n">Application</span> <span class="n">Load</span> <span class="n">Balancer</span> <span class="ow">in</span> <span class="n">front</span> <span class="n">of</span> <span class="n">the</span> <span class="n">EC2</span> <span class="n">instances</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Configure</span> <span class="n">an</span> <span class="n">Auto</span> <span class="n">Scaling</span> <span class="n">group</span> <span class="n">to</span> <span class="n">add</span> <span class="ow">or</span> <span class="n">remove</span> <span class="n">instances</span> <span class="n">across</span> <span class="n">multiple</span> <span class="n">Availability</span> <span class="n">Zones</span><span class="o">.</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Configure</span> <span class="n">a</span> <span class="n">Network</span> <span class="n">Load</span> <span class="n">Balancer</span> <span class="ow">in</span> <span class="n">front</span> <span class="n">of</span> <span class="n">the</span> <span class="n">EC2</span> <span class="n">instances</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">E</span><span class="p">)</span> <span class="n">Add</span> <span class="n">more</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">another</span> <span class="n">Availability</span> <span class="n">Zone</span>
+</code></pre></div>
+<h4 id="answer_7">Answer</h4>
+<p><mark>Correct Answers:</mark></p>
+<p><mark>B) Configure an Application Load Balancer in front of the EC2 instances</mark>
+<mark>C) Configure an Auto Scaling group to add or remove instances across multiple Availability Zones</mark></p>
+<p>Answer explanation: An Application Load Balancer should be used as it operates at Layer 7. Using an Auto Scaling group across multiple AZs enables high availability and cost-effectiveness.</p>
+<h3 id="question-9">Question 9</h3>
+<p><strong>A mobile application is being deployed on AWS. The application requires sign-up and sign-in services that support creation of user profiles and social sign-in from third-party identity providers. Which service should be used?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">IAM</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">AWS</span> <span class="n">KMS</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">Kinesis</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">Cognito</span>
+</code></pre></div>
+<h4 id="answer_8">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>D) Amazon Cognito</mark></p>
+<p>Answer explanation: Amazon Cognito provides authentication, authorization, and user management for your web and mobile apps. Your users can sign in directly with a user name and password, or through a third party such as Facebook, Amazon, Google or Apple</p>
+<h3 id="question-10">Question 10</h3>
+<p><strong>A series of sensors generate streaming data. The data must be collected from producers, analyzed in real time using SQL queries, and then loaded into Amazon S3. Which services should a solutions architect choose?
+Select all the apply:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">Kinesis</span> <span class="n">Data</span> <span class="n">Analytics</span> <span class="k">for</span> <span class="n">analyzing</span> <span class="n">Kinesis</span> <span class="n">Firehose</span> <span class="k">for</span> <span class="n">loading</span> <span class="n">the</span> <span class="n">data</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">Kinesis</span> <span class="n">Data</span> <span class="n">Streams</span> <span class="k">for</span> <span class="n">collecting</span> <span class="n">real</span><span class="o">-</span><span class="n">time</span> <span class="n">data</span> <span class="kn">from</span> <span class="nn">producers</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">RedShift</span> <span class="k">for</span> <span class="n">analyzing</span><span class="p">,</span> <span class="ow">and</span> <span class="n">AWS</span> <span class="n">Backup</span> <span class="k">for</span> <span class="n">loading</span> <span class="n">the</span> <span class="n">data</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Redshift</span> <span class="k">for</span> <span class="n">Analysis</span> <span class="ow">and</span> <span class="n">DynamoDB</span> <span class="k">for</span> <span class="n">storage</span>
+</code></pre></div>
+<h4 id="answer_9">Answer</h4>
+<p><mark>Correct Answers:</mark></p>
+<p><mark>A) Amazon Kinesis Data Analytics for analyzing Kinesis Firehose for loading the data.</mark>
+<mark>B) Amazon Kinesis Data Streams for collecting real-time data from producers.</mark></p>
+<p>Answer explanation: 
+Kinesis Data Analytics processes and analyzes streaming data. It can use Data Streams as a source and data can be analyzed using standard SQL queries. Processed results can be emitted to Amazon S3 through Kinesis Firehose. Amazon Kinesis Data Streams enables real-time processing of streaming big data. It collects data from producers and processes the data.</p>
+<h3 id="question-11">Question 11</h3>
+<p><strong>A company runs a relational database on-premises that is only used for occasional queries. The database will be migrated to AWS. The company requires a managed solution that only incurs costs when the database is actually used. Which AWS service should they use?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">Aurora</span> <span class="n">Serverless</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">RDS</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">DynamoDB</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">Aurora</span>
+</code></pre></div>
+<h4 id="answer_10">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>A) Amazon Aurora Serverless</mark></p>
+<p>Answer explanation: Amazon Aurora Serverless is an on-demand auto scaling configuration for Amazon Aurora, where the database will automatically start up, shut down, and scale capacity up or down based on your application's needs. You pay on a per-second basis for the database capacity you use when the database is active.</p>
+<h3 id="question-12">Question 12</h3>
+<p><strong>A solutions architect needs to choose the most cost-effective storage for an Amazon EC2 instance with an Elastic Block Store (EBS) volume. The application will receive infrequent bursts of traffic with disk I/O requirements up to 3,000 IOPS for short periods. Which solution should the solutions architect choose?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">EBS</span> <span class="n">General</span> <span class="n">Purpose</span> <span class="n">SSD</span> <span class="p">(</span><span class="n">gp2</span><span class="p">)</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Cold</span> <span class="n">HDD</span> <span class="p">(</span><span class="n">sc1</span><span class="p">)</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Throughput</span> <span class="n">Optimized</span> <span class="n">HDD</span> <span class="p">(</span><span class="n">st1</span><span class="p">)</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Provisioned</span> <span class="n">IOPS</span> <span class="n">SSD</span> <span class="p">(</span><span class="n">io1</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="answer_11">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>A) Amazon EBS General Purpose SSD (gp2)</mark></p>
+<p>Answer explanation: General Purpose SSD (gp2) volumes offer cost-effective storage that is ideal for a broad range of workloads. These volumes deliver single-digit millisecond latencies and the ability to burst to 3,000 IOPS for extended periods of time.</p>
+<h3 id="question-13">Question 13</h3>
+<p><strong>A multi-tier architecture is being migrated from on-premises to the AWS Cloud. The database tier runs on MySQL. The solutions architect requires a high-availability, managed database solution on AWS that supports Multi-AZ. Which migration path should the solutions architect choose?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">AWS</span> <span class="n">Database</span> <span class="n">Migration</span> <span class="n">Service</span> <span class="p">(</span><span class="n">DMS</span><span class="p">)</span> <span class="n">to</span> <span class="n">directly</span> <span class="n">migrate</span> <span class="n">the</span> <span class="n">database</span> <span class="n">to</span> <span class="n">an</span> <span class="n">Amazon</span> <span class="n">RDS</span> <span class="n">MySQL</span> <span class="n">Multi</span><span class="o">-</span><span class="n">AZ</span> <span class="n">deployment</span><span class="o">.</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">AWS</span> <span class="n">Database</span> <span class="n">Migration</span> <span class="n">Service</span> <span class="p">(</span><span class="n">DMS</span><span class="p">)</span> <span class="n">to</span> <span class="n">directly</span> <span class="n">migrate</span> <span class="n">the</span> <span class="n">database</span> <span class="n">to</span> <span class="n">an</span> <span class="n">Amazon</span> <span class="n">DynamoDB</span> <span class="n">Multi</span><span class="o">-</span><span class="n">AZ</span> <span class="n">deployment</span><span class="o">.</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">AWS</span> <span class="n">Database</span> <span class="n">Migration</span> <span class="n">Service</span> <span class="p">(</span><span class="n">DMS</span><span class="p">)</span> <span class="n">to</span> <span class="n">directly</span> <span class="n">migrate</span> <span class="n">the</span> <span class="n">database</span> <span class="n">to</span> <span class="n">an</span> <span class="n">Amazon</span> <span class="n">Elasticache</span> <span class="n">Multi</span><span class="o">-</span><span class="n">AZ</span> <span class="n">deployment</span><span class="o">.</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">AWS</span> <span class="n">Database</span> <span class="n">Migration</span> <span class="n">Service</span> <span class="p">(</span><span class="n">DMS</span><span class="p">)</span> <span class="n">to</span> <span class="n">directly</span> <span class="n">migrate</span> <span class="n">the</span> <span class="n">database</span> <span class="n">to</span> <span class="n">an</span> <span class="n">Amazon</span> <span class="n">Keyspace</span><span class="o">.</span>
+</code></pre></div>
+<h4 id="answer_12">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>A) Use the AWS Database Migration Service (DMS) to directly migrate the database to an Amazon RDS MySQL Multi-AZ deployment.</mark></p>
+<p>Answer explanation: The AWS DMS service can be used to directly migrate the MySQL database to an Amazon RDS Multi-AZ deployment. The entire process can be online and is managed for you.</p>
+<h3 id="question-14">Question 14</h3>
+<p><strong>A solutions architect requires a non-relational key/value store that can dynamically scale without intervention. Which solution is MOST suitable?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">DynamoDB</span> <span class="k">with</span> <span class="n">provisioned</span> <span class="n">capacity</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">DynamoDB</span> <span class="k">with</span> <span class="n">Auto</span> <span class="n">Scaling</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">S3</span> <span class="k">with</span> <span class="n">intelligent</span><span class="o">-</span><span class="n">tiering</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">EFS</span> <span class="k">with</span> <span class="n">Auto</span> <span class="n">Scaling</span>
+</code></pre></div>
+<h4 id="answer_13">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>B) Amazon DynamoDB with Auto Scaling</mark></p>
+<p>Answer explanation: When you use Auto Scaling with DynamoDB, the RCUs/WCUs are automatically adjusted for you so your database can scale seamlessly.</p>
+<h3 id="question-15">Question 15</h3>
+<p><strong>An application stores images in an Amazon S3 bucket using the Standard storage class. The images require rapid access for 14 days. After that, the images may be infrequently accessed for 90 days and can then be deleted. Which object lifecycle configuration is MOST cost-efficient?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Transition</span> <span class="n">to</span> <span class="n">STANDARD_IA</span> <span class="n">after</span> <span class="mi">30</span> <span class="n">days</span><span class="p">,</span> <span class="n">then</span> <span class="n">after</span> <span class="mi">90</span> <span class="n">days</span><span class="p">,</span> <span class="n">expire</span> <span class="n">the</span> <span class="n">objects</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Transition</span> <span class="n">to</span> <span class="n">ONE</span> <span class="n">ZONE_IA</span> <span class="n">after</span> <span class="mi">14</span> <span class="n">days</span><span class="p">,</span> <span class="n">then</span> <span class="n">after</span> <span class="mi">90</span> <span class="n">days</span><span class="p">,</span> <span class="n">transition</span> <span class="n">to</span> <span class="n">Glacier</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Transition</span> <span class="n">to</span> <span class="n">STANDARD_IA</span> <span class="n">after</span> <span class="mi">14</span> <span class="n">days</span><span class="p">,</span> <span class="n">then</span> <span class="n">after</span> <span class="mi">90</span> <span class="n">days</span><span class="p">,</span> <span class="n">expire</span> <span class="n">the</span> <span class="n">objects</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Transition</span> <span class="n">to</span> <span class="n">RRS</span> <span class="n">after</span> <span class="mi">14</span> <span class="n">days</span><span class="p">,</span> <span class="n">then</span> <span class="n">after</span> <span class="mi">90</span> <span class="n">days</span><span class="p">,</span> <span class="n">transition</span> <span class="n">to</span> <span class="n">GLACIER</span>
+</code></pre></div>
+<h4 id="answer_14">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>C) Transition to STANDARD_IA after 14 days, then after 90 days, expire the objects</mark></p>
+<p>Answer explanation: This represents the lowest-cost option. Move the objects to the STANDARD_IA storage class after 14 days, as they will no longer be accessed regularly. Then expire the objects after 90 days.</p>
+<h3 id="question-16">Question 16</h3>
+<p><strong>An auto scaling group (ASG) of EC2 instances processes messages from an Amazon SQS queue. The ASG scales based on CPU usage, but this has proven to be an unreliable measurement. The number of jobs waiting to be processed should be more reliable. What changes should a solutions architect make?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">custom</span> <span class="n">CloudWatch</span> <span class="n">metric</span> <span class="n">to</span> <span class="n">measure</span> <span class="n">the</span> <span class="n">number</span> <span class="n">of</span> <span class="n">messages</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">queue</span><span class="p">,</span> <span class="ow">and</span> <span class="n">configure</span> <span class="n">the</span> <span class="n">ASG</span> <span class="n">to</span> <span class="n">scale</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">number</span> <span class="n">of</span> <span class="n">messages</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">queue</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">schedule</span> <span class="n">policy</span> <span class="n">that</span> <span class="n">scales</span> <span class="n">the</span> <span class="n">ASG</span> <span class="n">at</span> <span class="n">times</span> <span class="n">of</span> <span class="n">expected</span> <span class="n">peak</span> <span class="n">load</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">target</span> <span class="n">tracking</span> <span class="n">policy</span> <span class="n">that</span> <span class="n">keeps</span> <span class="n">the</span> <span class="n">ASG</span> <span class="n">at</span> <span class="mi">80</span><span class="o">%</span> <span class="n">memory</span> <span class="n">utilization</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">Amazon</span> <span class="n">SNS</span> <span class="n">topic</span> <span class="n">to</span> <span class="n">generate</span> <span class="n">a</span> <span class="n">notification</span> <span class="n">each</span> <span class="n">time</span> <span class="n">a</span> <span class="n">message</span> <span class="ow">is</span> <span class="n">added</span> <span class="n">to</span> <span class="n">the</span> <span class="n">queue</span> <span class="ow">and</span> <span class="n">have</span> <span class="n">the</span> <span class="n">ASG</span> <span class="n">scale</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">number</span> <span class="n">of</span> <span class="n">SNS</span> <span class="n">messages</span>
+</code></pre></div>
+<h4 id="answer_15">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>A) Create a custom CloudWatch metric to measure the number of messages in the queue, and configure the ASG to scale based on the number of messages in the queue</mark></p>
+<p>Answer explanation: A custom CloudWatch metric can be created that measures the number of messages waiting to be processed in the queue. The ASG can scale the number of instances based on the actual number of messages waiting to be processed.</p>
+<h3 id="question-17">Question 17</h3>
+<p><strong>The launch configuration for an Amazon EC2 Auto Scaling group has been created with detailed monitoring enabled. How can a solutions architect reduce monitoring costs?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Modify</span> <span class="n">the</span> <span class="n">launch</span> <span class="n">configuration</span> <span class="n">to</span> <span class="n">use</span> <span class="n">basic</span> <span class="n">monitoring</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">new</span> <span class="n">launch</span> <span class="n">configuration</span> <span class="k">with</span> <span class="n">basic</span> <span class="n">monitoring</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Modify</span> <span class="n">the</span> <span class="n">launch</span> <span class="n">configuration</span> <span class="n">to</span> <span class="n">disable</span> <span class="n">detailed</span> <span class="n">monitoring</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">new</span> <span class="n">launch</span> <span class="n">configuration</span> <span class="k">with</span> <span class="n">simple</span> <span class="n">scaling</span> <span class="n">policy</span>
+</code></pre></div>
+<h4 id="answer_16">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>B) Create a new launch configuration with basic monitoring</mark></p>
+<p>Answer explanation: Detailed monitoring uses a granularity of one minute and is chargeable. Basic monitoring uses a granularity of five minutes and is free.</p>
+<h3 id="question-18">Question 18</h3>
+<p><strong>Several Amazon EC2 instances run in a private subnet in an Amazon VPC. The instances must be able to download data from the internet. Bandwidth requirements will vary significantly and a managed service is required that elastically scales. What should the solutions architect configure for the private subnet?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">An</span> <span class="n">internet</span> <span class="n">gateway</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">A</span> <span class="n">NAT</span> <span class="n">Gateway</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">A</span> <span class="n">VPC</span> <span class="n">endpoint</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">A</span> <span class="n">NAT</span> <span class="n">instance</span>
+</code></pre></div>
+<h4 id="answer_17">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>B) An NAT gateway.</mark></p>
+<p>Answer explanation: A NAT gateway is a managed service that will elastically scale up to 45 Gbps. This is a good solution for providing internet access to instances in private subnets.</p>
+<h3 id="question-19">Question 19</h3>
+<p><strong>A legacy application running on-premises needs to interact with local storage using the iSCSI protocol. A solutions architect needs to design a resilient storage solution to provision all new storage on AWS. Which storage solution meets the legacy application’s requirements?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Use</span> <span class="n">an</span> <span class="n">Amazon</span> <span class="n">EFS</span> <span class="n">filesystem</span> <span class="n">over</span> <span class="n">an</span> <span class="n">AWS</span> <span class="n">Managed</span> <span class="n">VPN</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">An</span> <span class="n">AWS</span> <span class="n">Storage</span> <span class="n">Gateway</span> <span class="n">volume</span> <span class="n">gateway</span> <span class="ow">in</span> <span class="n">stored</span> <span class="n">mode</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">An</span> <span class="n">AWS</span> <span class="n">Storage</span> <span class="n">Gateway</span> <span class="n">volume</span> <span class="n">gateway</span> <span class="ow">in</span> <span class="n">cached</span> <span class="n">mode</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Use</span> <span class="n">an</span> <span class="n">Amazon</span> <span class="n">EBS</span> <span class="n">filesystem</span> <span class="k">with</span> <span class="n">a</span> <span class="n">PrivateLink</span> <span class="n">Endpoint</span>
+</code></pre></div>
+<h4 id="answer_18">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>B) An AWS Storage Gateway volume gateway in cached mode</mark></p>
+<p>Answer explanation: With a volume gateway in cached mode, you mount using iSCSI, store your data in Amazon S3, and retain a copy of frequently accessed data subsets locally. This is exactly what is required.</p>
+<h3 id="question-20">Question 20</h3>
+<p><strong>An application requires a PostgreSQL database which will only be occasionally used. The database should automatically start up, shut down, and scale capacity up or down based on the application's needs. Which database service will be most cost-effective?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">AWS</span> <span class="n">RDS</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">AWS</span> <span class="n">Redshift</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">Aurora</span> <span class="n">Serverless</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Amazon</span> <span class="n">DynamoDB</span>
+</code></pre></div>
+<h4 id="answer_19">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>C) Amazon Aurora Serverless</mark></p>
+<p>Answer explanation: Amazon Aurora Serverless is an on-demand, auto-scaling configuration for Amazon Aurora. The database automatically starts up, shuts down, and scales capacity up or down based on application needs. This is an ideal database solution for infrequently-used applications.</p>
+<h3 id="question-21">Question 21</h3>
+<p><strong>The engineering team at an in-home fitness company is evaluating multiple in-memory data stores with the ability to power its on-demand, live leaderboard. The company's leaderboard requires high availability, low latency, and real-time processing to deliver customizable user data for the community of users working out together virtually from the comfort of their home.
+As a solutions architect, which of the following solutions would you recommend? (Select two)</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Power</span> <span class="n">the</span> <span class="n">on</span><span class="o">-</span><span class="n">demand</span><span class="p">,</span> <span class="n">live</span> <span class="n">leaderboard</span> <span class="n">using</span> <span class="n">RDS</span> <span class="n">Aurora</span> <span class="k">as</span> <span class="n">it</span> <span class="n">meets</span> <span class="n">the</span> <span class="ow">in</span><span class="o">-</span><span class="n">memory</span><span class="p">,</span> <span class="n">high</span> <span class="n">availability</span><span class="p">,</span> <span class="n">low</span> <span class="n">latency</span> <span class="n">requirement</span><span class="o">.</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Power</span> <span class="n">the</span> <span class="n">on</span><span class="o">-</span><span class="n">demand</span><span class="p">,</span> <span class="n">live</span> <span class="n">leaderboard</span> <span class="n">using</span> <span class="n">Dynamo</span> <span class="n">DB</span> <span class="k">with</span> <span class="n">DAX</span> <span class="k">as</span> <span class="n">it</span> <span class="n">meets</span> <span class="n">the</span> <span class="ow">in</span><span class="o">-</span><span class="n">memory</span><span class="p">,</span> <span class="n">high</span> <span class="n">availability</span><span class="p">,</span> <span class="n">low</span> <span class="n">latency</span> <span class="n">requirement</span><span class="o">.</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Power</span> <span class="n">the</span> <span class="n">on</span><span class="o">-</span><span class="n">demand</span><span class="p">,</span> <span class="n">live</span> <span class="n">leaderboard</span> <span class="n">using</span> <span class="n">AWS</span> <span class="n">Neptune</span> <span class="k">as</span> <span class="n">it</span> <span class="n">meets</span> <span class="n">the</span> <span class="ow">in</span><span class="o">-</span><span class="n">memory</span><span class="p">,</span> <span class="n">high</span> <span class="n">availability</span><span class="p">,</span> <span class="n">low</span> <span class="n">latency</span> <span class="n">requirement</span><span class="o">.</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Power</span> <span class="n">the</span> <span class="n">on</span><span class="o">-</span><span class="n">demand</span><span class="p">,</span> <span class="n">live</span> <span class="n">leaderboard</span> <span class="n">using</span> <span class="n">ElasticCache</span> <span class="n">Redis</span> <span class="k">as</span> <span class="n">it</span> <span class="n">meets</span> <span class="n">the</span> <span class="ow">in</span><span class="o">-</span><span class="n">memory</span><span class="p">,</span> <span class="n">high</span> <span class="n">availability</span><span class="p">,</span> <span class="n">low</span> <span class="n">latency</span> <span class="n">requirement</span><span class="o">.</span>
+</code></pre></div>
+<h4 id="answer_20">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>B) Power the on-demand, live leaderboard using ElastiCache Redis as it meets the in-memory, high availability, low latency requirements</mark>
+<mark>C) Power the on-demand, live leaderboard using DynamoDB with DynamoDB Accelerator (DAX) as it meets the in-memory, high availability, low latency requirements</mark></p>
+<h3 id="question-22">Question 22</h3>
+<p><strong>An application is currently hosted on four EC2 instances (behind Application Load Balancer) deployed in a single Availability Zone (AZ). To maintain an acceptable level of end-user experience, the application needs at least 4 instances to be always available.
+As a solutions architect, which of the following would you recommend so that the application achieves high availability with MINIMUM cost?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">one</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">two</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">four</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">three</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">two</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+</code></pre></div>
+<h4 id="answer_21">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>B) Deploy the instances in three Availability Zones. Launch two instances in each Availability Zone</mark></p>
+<p>Answer explanation: The right course of action is to launch two instances in each Availability Zone while deploying the instances across three Availability Zones. We will still have 4 instances available even if one of the AZs is down, so the application can continue to provide a usable experience for users. In this scenario, high availability may be attained with just 6 instances.</p>
+<h3 id="question-23">Question 23</h3>
+<p><strong>To compile the uncut video footage from its reporting teams around the US, a news network uses Amazon S3. The news network has lately added new regions in Asia and Europe. Large video file uploads to the target S3 bucket have reportedly been extremely slow, according to the technical staff in the foreign branch offices. Which of the following choices would increase the speed at which files upload into S3?(Choose two)</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Use</span> <span class="n">multipart</span> <span class="n">uploads</span> <span class="k">for</span> <span class="n">faster</span> <span class="n">file</span> <span class="n">uploads</span> <span class="n">into</span> <span class="n">the</span> <span class="n">destination</span> <span class="n">S3</span> <span class="n">bucket</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Use</span> <span class="n">AWS</span> <span class="n">Global</span> <span class="n">Accelerator</span> <span class="k">for</span> <span class="n">faster</span> <span class="n">file</span> <span class="n">uploads</span> <span class="n">into</span> <span class="n">the</span> <span class="n">destination</span> <span class="n">S3</span> <span class="n">bucket</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Create</span> <span class="n">multiple</span> <span class="n">AWS</span> <span class="n">direct</span> <span class="n">connect</span> <span class="n">connections</span> <span class="n">between</span> <span class="n">the</span> <span class="n">AWS</span> <span class="n">Cloud</span> <span class="ow">and</span> <span class="n">branch</span> <span class="n">offices</span> <span class="ow">in</span> <span class="n">Europe</span> <span class="ow">and</span> <span class="n">Asia</span><span class="o">.</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">connect</span> <span class="n">connections</span> <span class="k">for</span> <span class="n">faster</span> <span class="n">file</span> <span class="n">upload</span> <span class="n">into</span> <span class="n">S3</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Create</span> <span class="n">multiple</span> <span class="n">site</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">site</span> <span class="n">VPN</span> <span class="n">connections</span> <span class="n">between</span> <span class="n">the</span> <span class="n">AWS</span> <span class="n">Cloud</span> <span class="ow">and</span> <span class="n">branch</span> <span class="n">offices</span> <span class="ow">in</span> <span class="n">Europe</span> <span class="ow">and</span> <span class="n">Asia</span><span class="o">.</span> <span class="n">Use</span> <span class="n">these</span> <span class="n">VPN</span> <span class="n">connections</span> <span class="k">for</span> <span class="n">faster</span> <span class="n">file</span> <span class="n">uploads</span> <span class="n">to</span> <span class="n">S3</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="n">E</span><span class="p">)</span> <span class="n">Use</span> <span class="n">Amazon</span> <span class="n">S3</span> <span class="n">Transfer</span> <span class="n">acceleration</span> <span class="n">to</span> <span class="n">enable</span> <span class="n">faster</span> <span class="n">file</span> <span class="n">upload</span> <span class="n">into</span> <span class="n">the</span> <span class="n">destination</span> <span class="n">S3</span> <span class="n">bucket</span>
+</code></pre></div>
+<h4 id="answer_22">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>A) Use Amazon S3 Transfer Acceleration to enable faster file uploads into the destination S3 bucket</mark>
+<mark>B) Use multipart uploads for faster file uploads into the destination S3 bucket</mark></p>
+<p>Answer explanation: The right course of action is to launch two instances in each Availability Zone while deploying the instances across three Availability Zones. We will still have 4 instances available even if one of the AZs is down, so the application can continue to provide a usable experience for users. In this scenario, high availability may be attained with just 6 instances.</p>
+<h3 id="question-24">Question 24</h3>
+<p><strong>You would like to mount a network file system on Linux instances, where files will be stored and accessed frequently at first, and then infrequently. What solution is the MOST cost-effective?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">FSx</span> <span class="k">for</span> <span class="n">Lustre</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">S3</span> <span class="n">Intelligent</span> <span class="n">Tiering</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Glacier</span> <span class="n">deep</span> <span class="n">archive</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">EFS</span> <span class="n">IA</span>
+</code></pre></div>
+<h4 id="answer_23">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>D) EFS IA</mark></p>
+<p>Answer explanation: For usage with AWS Cloud services and on-premises resources, Amazon Elastic File System (Amazon EFS) offers a simple, scalable, fully managed elastic NFS file system. For high availability and durability, Amazon EFS is a local service that stores data within and across several Availability Zones (AZs).
+With storage costs up to 92% less expensive than Amazon EFS Standard, Amazon EFS Infrequent Access (EFS IA) is a storage class that offers price/performance that is cost-optimized for files that are not used every day. This is the best choice as a result.</p>
+<h3 id="question-25">Question 25</h3>
+<p><strong>A major automaker wants to create a new car-as-sensor service using totally Serverless components that AWS automatically delivers and manages. The automaker's development team does not want a capacity provisioning option since it does not want to manually adapt to shifting amounts of sensor data.
+Which of the following approaches is the BEST fit to create this car-as-sensor service, given these limitations?</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Ingest</span> <span class="n">the</span> <span class="n">sensor</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">AWS</span> <span class="n">SQS</span> <span class="n">standard</span> <span class="n">queue</span> <span class="n">which</span> <span class="ow">is</span> <span class="n">polled</span> <span class="n">by</span> <span class="n">application</span> <span class="n">running</span> <span class="n">on</span> <span class="n">EC2</span> <span class="n">instance</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">data</span> <span class="ow">is</span> <span class="n">written</span> <span class="n">into</span> <span class="n">auto</span><span class="o">-</span><span class="n">scaled</span> <span class="n">DynamoDB</span> <span class="n">table</span> <span class="k">for</span> <span class="n">downstream</span> <span class="n">processing</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Ingest</span> <span class="n">the</span> <span class="n">sensor</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">AWS</span> <span class="n">SQS</span> <span class="n">standard</span> <span class="n">queue</span> <span class="n">which</span> <span class="ow">is</span> <span class="n">polled</span> <span class="n">by</span> <span class="n">a</span> <span class="n">Lambda</span> <span class="n">function</span> <span class="ow">in</span> <span class="n">batches</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">data</span> <span class="ow">is</span> <span class="n">written</span> <span class="n">into</span> <span class="n">auto</span><span class="o">-</span><span class="n">scaled</span> <span class="n">DynamoDB</span> <span class="n">table</span> <span class="k">for</span> <span class="n">downstream</span> <span class="n">processing</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Ingest</span> <span class="n">the</span> <span class="n">sensor</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">AWS</span> <span class="n">SQS</span> <span class="n">standard</span> <span class="n">queue</span> <span class="n">which</span> <span class="ow">is</span> <span class="n">polled</span> <span class="n">by</span> <span class="n">application</span> <span class="n">running</span> <span class="n">on</span> <span class="n">EC2</span> <span class="n">instance</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">data</span> <span class="ow">is</span> <span class="n">written</span> <span class="n">into</span> <span class="n">auto</span><span class="o">-</span><span class="n">scaled</span> <span class="n">DynamoDB</span> <span class="n">table</span> <span class="k">for</span> <span class="n">downstream</span> <span class="n">processing</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Ingest</span> <span class="n">the</span> <span class="n">sensor</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">AWS</span> <span class="n">SQS</span> <span class="n">standard</span> <span class="n">queue</span> <span class="n">which</span> <span class="ow">is</span> <span class="n">polled</span> <span class="n">by</span> <span class="n">application</span> <span class="n">running</span> <span class="n">on</span> <span class="n">EC2</span> <span class="n">instance</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">data</span> <span class="ow">is</span> <span class="n">written</span> <span class="n">into</span> <span class="n">auto</span><span class="o">-</span><span class="n">scaled</span> <span class="n">DynamoDB</span> <span class="n">table</span> <span class="k">for</span> <span class="n">downstream</span> <span class="n">processing</span>
+</code></pre></div>
+<h4 id="answer_24">Answer</h4>
+<p><mark>Correct Answer:</mark></p>
+<p><mark>B) Ingest the sensor data in an Amazon SQS standard queue, which is polled by a Lambda function in batches and the data is written into an auto-scaled DynamoDB table for downstream processing</mark></p>
+<p>Answer explanation: The infrastructure and continuous operations required to deliver a highly available and scalable message queuing service are managed by AWS. With SQS, there are no up-front costs, no need for purchasing, setting up, and configuring messaging software, and no time-consuming infrastructure build-out and upkeep. SQS queues are automatically scaled and formed dynamically, allowing for speedy and effective application development.
+This is the best choice because manually provisioning the capacity is not necessary.</p>
+<!-- ### Question 26
+
+**For project-specific work, an IT business grants S3 bucket access to individual users inside the same account. Cross-account S3 access requests are increasing every month as business requirements change. The organization is searching for a solution that provides user and account-level access controls to data stored in S3 buckets.
+Which of the following, as a Solutions Architect, would you recommend as the MOST optimal method of managing access for this use-case?**
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Use</span> <span class="n">Security</span> <span class="n">Groups</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Use</span> <span class="n">ACLs</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Use</span> <span class="n">AWS</span> <span class="n">S3</span> <span class="n">Bucket</span> <span class="n">Policies</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Use</span> <span class="n">IAM</span> <span class="n">Policies</span>
+</code></pre></div>
+
+#### Answer
+
+==Correct Answer:==
+
+==B) Power the on-demand, live leaderboard using ElastiCache Redis as it meets the in-memory, high availability, low latency requirements==
+==C) Power the on-demand, live leaderboard using DynamoDB with DynamoDB Accelerator (DAX) as it meets the in-memory, high availability, low latency requirements==
+
+### Question 27
+
+**To compile the uncut video footage from its reporting teams around the US, a news network uses Amazon S3. The news network has lately added new regions in Asia and Europe. Large video file uploads to the target S3 bucket have reportedly been extremely slow, according to the technical staff in the foreign branch offices. Which of the following choices would increase the speed at which files upload into S3?(Choose two)**
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">one</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">two</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">four</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">three</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">two</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+</code></pre></div>
+
+#### Answer
+
+==Correct Answer:==
+
+==B) Deploy the instances in three Availability Zones. Launch two instances in each Availability Zone==
+
+Answer explanation: The right course of action is to launch two instances in each Availability Zone while deploying the instances across three Availability Zones. We will still have 4 instances available even if one of the AZs is down, so the application can continue to provide a usable experience for users. In this scenario, high availability may be attained with just 6 instances.
+
+### Question 28
+
+**An application is currently hosted on four EC2 instances (behind Application Load Balancer) deployed in a single Availability Zone (AZ). To maintain an acceptable level of end-user experience, the application needs at least 4 instances to be always available.
+As a solutions architect, which of the following would you recommend so that the application achieves high availability with MINIMUM cost?**
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">one</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">two</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">four</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">three</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">two</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+</code></pre></div>
+
+#### Answer
+
+==Correct Answer:==
+
+==B) Deploy the instances in three Availability Zones. Launch two instances in each Availability Zone==
+
+Answer explanation: The right course of action is to launch two instances in each Availability Zone while deploying the instances across three Availability Zones. We will still have 4 instances available even if one of the AZs is down, so the application can continue to provide a usable experience for users. In this scenario, high availability may be attained with just 6 instances.
+
+### Question 29
+
+**An application is currently hosted on four EC2 instances (behind Application Load Balancer) deployed in a single Availability Zone (AZ). To maintain an acceptable level of end-user experience, the application needs at least 4 instances to be always available.
+As a solutions architect, which of the following would you recommend so that the application achieves high availability with MINIMUM cost?**
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">one</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">two</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">four</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">three</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">two</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+</code></pre></div>
+
+#### Answer
+
+==Correct Answer:==
+
+==B) Deploy the instances in three Availability Zones. Launch two instances in each Availability Zone==
+
+Answer explanation: The right course of action is to launch two instances in each Availability Zone while deploying the instances across three Availability Zones. We will still have 4 instances available even if one of the AZs is down, so the application can continue to provide a usable experience for users. In this scenario, high availability may be attained with just 6 instances.
+
+### Question 30
+
+**An application is currently hosted on four EC2 instances (behind Application Load Balancer) deployed in a single Availability Zone (AZ). To maintain an acceptable level of end-user experience, the application needs at least 4 instances to be always available.
+As a solutions architect, which of the following would you recommend so that the application achieves high availability with MINIMUM cost?**
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">A</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">one</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="n">B</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">two</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">four</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="n">C</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">three</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="n">D</span><span class="p">)</span> <span class="n">Deploy</span> <span class="n">the</span> <span class="n">instances</span> <span class="ow">in</span> <span class="n">two</span> <span class="n">AZ</span><span class="o">.</span> <span class="n">Launch</span> <span class="n">two</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">AZ</span><span class="o">.</span>
+</code></pre></div>
+
+#### Answer
+
+==Correct Answer:==
+
+==B) Deploy the instances in three Availability Zones. Launch two instances in each Availability Zone==
+
+Answer explanation: The right course of action is to launch two instances in each Availability Zone while deploying the instances across three Availability Zones. We will still have 4 instances available even if one of the AZs is down, so the application can continue to provide a usable experience for users. In this scenario, high availability may be attained with just 6 instances. -->
+
+<!-- ### CloudFront vs Global Accelerator
+
+![Alt text](image-1.png)
+
+Some `code` goes here
+
+### Plain codeblock
+
+A plain codeblock:
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>Some code here
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>def myfunction()
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>// some comment
+</code></pre></div>
+
+#### Code for a specific language
+
+Some more code with the `py` at the start:
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="k">def</span> <span class="nf">whatever</span><span class="p">()</span>
+</code></pre></div>
+
+#### With a title
+
+<div class="highlight"><span class="filename">bubble_sort.py</span><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</code></pre></div>
+
+#### With line numbers
+
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1">1</a></span>
+<span class="normal"><a href="#__codelineno-33-2">2</a></span>
+<span class="normal"><a href="#__codelineno-33-3">3</a></span>
+<span class="normal"><a href="#__codelineno-33-4">4</a></span>
+<span class="normal"><a href="#__codelineno-33-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4"></a>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+<a id="__codelineno-33-5" name="__codelineno-33-5"></a>                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+
+#### Highlighting lines
+
+```py hl_lines="2 3"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+``` -->
+
+<h2 id="hope-you-liked-it-please-subscribe-to-my-youtube-channel">Hope you liked it. Please Subscribe to my Youtube Channel.</h2>
+<p><a href="https://www.youtube.com/channel/UC27P02dt561B1yehzyIWhyQ">https://www.youtube.com/channel/UC27P02dt561B1yehzyIWhyQ</a>
+<img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f604.svg" title=":smile:" /></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2023 <a href="https://github.com/abhishekkpandey1"  target="_blank" rel="noopener">Abhishek Kumar</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UC27P02dt561B1yehzyIWhyQ" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/abhishekkpandey1" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/profile.php?id=100000535670229" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/talkabhishekpandey/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>
